@@ -13,13 +13,9 @@
     <!-- Improve your SEO by adding a small descrption of you -->
     <meta name="description" content="Gal Gorelik | Developer" />
     <!-- Required librarys -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
-    <script src="https://unpkg.com/scrollreveal"></script>
-    <script>
-      ScrollReveal({ reset: false });
-    </script>
-    <!-- Remove this script once you setup your custom portfolio -->
-    <script async defer src="https://buttons.github.io/buttons.js"></script>
   </head>
   <!-- Follow the HTML instructions to create your stunning portfolio website -->
 
@@ -215,7 +211,9 @@
         </div>
         <hr />
         <p class="footer__text">
-          © 2020 - Template developed by <a href="https://github.com/gal84" target="_blank">Gal Gorelik</a>
+          ©
+          <span id="year"></span> - Template developed by <a href="https://github.com/gal84" target="_blank">Gal
+            Gorelik</a>
           </a>
         </p>
         <p class="mt-3 pt-3">
@@ -226,6 +224,18 @@
         </p>
       </div>
     </footer>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+      integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+      crossorigin="anonymous"></script>
+    <script>let year = new Date();
+      let x = year.getFullYear();
+      document.getElementById("year").innerHTML = x;
+    </script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script>
+      ScrollReveal({ reset: false });
+    </script>
+    <script async defer src="https://buttons.github.io/buttons.js"></script>
   </body>
 
 </html>
